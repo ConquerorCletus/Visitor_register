@@ -1,6 +1,10 @@
 #include "main.h"
-
-void collectVisitorMessage() {
+/**
+ * collectvisitormessage - this function collects visitor's message
+ * Return: void
+ */
+void collectVisitorMessage() 
+{
     char visitorName[MAX_NAME_LENGTH];
     char recipient[MAX_NAME_LENGTH];
     char message[MAX_MESSAGE_LENGTH];
@@ -8,8 +12,7 @@ void collectVisitorMessage() {
 
     getchar();
 
-    printf("Please enter your name: ");
-    printf("\n");
+    printf("Please enter your name: \n");
     fgets(visitorName, MAX_NAME_LENGTH, stdin);
     visitorName[strcspn(visitorName, "\n")] = '\0'; 
 
